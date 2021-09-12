@@ -1,0 +1,15 @@
+version: '2'
+
+services: 
+  ruby:
+    image: pon0mar/lesson2:v2
+    environment: 
+      TEXT: "first TEXT"
+    ports:
+      - 8080:8080
+  ruby2:
+      image: pon0mar/lesson2:v2
+      environment: 
+        TEXT: "second TEXT"
+      ports:
+        - 8081:8080
